@@ -41,6 +41,17 @@ $ npm install
 ```bash
 $ docker compose up
 ```
+
+## 🌱 Seed de la base de datos
+
+Para poblar la base de datos con datos de ejemplo, se puede ejecutar el script de *seeding*, el cual genera automáticamente **20 registros de usuarios**.
+
+Este paso es útil para ambientes de desarrollo y pruebas.
+
+```bash
+npm run seeds
+
+
 ## Compile and run the project
 
 ```bash
