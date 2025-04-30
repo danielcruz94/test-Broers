@@ -1,0 +1,23 @@
+[
+    { "name": "Alice Johnson", "email": "alice.johnson@example.com", "password": "pass1234", "isActive": true },
+    { "name": "Bob Smith", "email": "bob.smith@example.com", "password": "qwerty123", "isActive": false },
+    { "name": "Charlie Davis", "email": "charlie.davis@example.com", "password": "abc12345", "isActive": true },
+    { "name": "Diana Lopez", "email": "diana.lopez@example.com", "password": "securePass1", "isActive": true },
+    { "name": "Ethan Wright", "email": "ethan.wright@example.com", "password": "letmein12", "isActive": false },
+    { "name": "Fiona Clark", "email": "fiona.clark@example.com", "password": "mypassword", "isActive": true },
+    { "name": "George Adams", "email": "george.adams@example.com", "password": "pass9876", "isActive": false },
+    { "name": "Hannah Brooks", "email": "hannah.brooks@example.com", "password": "hannah321", "isActive": true },
+    { "name": "Ian Mitchell", "email": "ian.mitchell@example.com", "password": "ianpassword", "isActive": false },
+    { "name": "Julia Scott", "email": "julia.scott@example.com", "password": "julia2023", "isActive": true },
+    { "name": "Kevin Morgan", "email": "kevin.morgan@example.com", "password": "kevinpass", "isActive": false },
+    { "name": "Laura Bennett", "email": "laura.bennett@example.com", "password": "laura001", "isActive": true },
+    { "name": "Michael Gray", "email": "michael.gray@example.com", "password": "mike1234", "isActive": true },
+    { "name": "Nina Evans", "email": "nina.evans@example.com", "password": "nina123", "isActive": false },
+    { "name": "Oscar Foster", "email": "oscar.foster@example.com", "password": "oscarpwd", "isActive": true },
+    { "name": "Paula Simmons", "email": "paula.simmons@example.com", "password": "paula2024", "isActive": false },
+    { "name": "Quentin Reed", "email": "quentin.reed@example.com", "password": "qr123456", "isActive": true },
+    { "name": "Rachel Kelly", "email": "rachel.kelly@example.com", "password": "rachelpass", "isActive": false },
+    { "name": "Sam Turner", "email": "sam.turner@example.com", "password": "sampass1", "isActive": true },
+    { "name": "Tina Collins", "email": "tina.collins@example.com", "password": "tinapwd9", "isActive": false }
+  ]
+  
