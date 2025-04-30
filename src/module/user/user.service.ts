@@ -34,7 +34,7 @@ export class UserService {
     return this.userModel.findById(id)
   }
 
-  findOne(id: number) {
+  findOne(id: string) {
     return `This action returns a #${id} user`;
   }
 
@@ -45,7 +45,7 @@ export class UserService {
 
   
 
-  update(id: number, updateUserDto: UpdateUserDto) {
+  update(id: string, updateUserDto: UpdateUserDto) {
     return this.userModel.updateOne({ _id: id }, updateUserDto)
   }
 
@@ -53,5 +53,15 @@ export class UserService {
   findAll() {
     return this.userModel.find({})
   }
+
+  async remove(id: string): Promise<any> {
+    const result = await this.userModel.findByIdAndDelete(id);
+    if (!result) {
+      throw new Error('Usuario no encontrado');
+    }
+    return { message: 'Usuario eliminado correctamente' };
+  }
+
+  
 
 }

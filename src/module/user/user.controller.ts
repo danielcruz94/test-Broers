@@ -6,6 +6,7 @@ import {
   Patch,
   Param,
   UseGuards,
+  Delete
 } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth,ApiBody } from '@nestjs/swagger';
 import { UserService } from './user.service';
@@ -41,16 +42,25 @@ export class UserController {
   @ApiResponse({ status: 200, description: 'Usuario encontrado' })
   @ApiResponse({ status: 404, description: 'Usuario no encontrado' })
   findOne(@Param('id') id: string) {
-    return this.userService.findOne(+id);
+    return this.userService.findOne(id);
   }
 
+  @UseGuards(AuthGuard('jwt'))
   @Patch(':id')
   @ApiOperation({ summary: 'Actualizar un usuario' })
   @ApiResponse({ status: 200, description: 'Usuario actualizado' })
   update(@Param('id') id: string, @Body() updateUserDto: UpdateUserDto) {
-    return this.userService.update(+id, updateUserDto);
+    return this.userService.update(id, updateUserDto);
   }
-
+  
+  @UseGuards(AuthGuard('jwt'))
+  @Delete(':id')
+  @ApiOperation({ summary: 'Eliminar un usuario' })
+  @ApiResponse({ status: 200, description: 'Usuario eliminado' })
+  @ApiResponse({ status: 404, description: 'Usuario no encontrado' })
+  remove(@Param('id') id: string) {
+    return this.userService.remove(id);
+  }
 
   
 }
