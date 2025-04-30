@@ -50,6 +50,7 @@ Este paso es útil para ambientes de desarrollo y pruebas.
 
 ```bash
 npm run seeds
+```
 
 
 ## Compile and run the project
