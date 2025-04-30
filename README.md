@@ -23,7 +23,13 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+[Nest](https://github.com/nestjs/nest) API Rest desarrollada en Nest js en una base de datos en Mongo DB que permite realizar un CRUD de usuarios y permite inicio de sesión en la que se valide si el usuario y la contraseña son
+correctos y el usuario se encuentre activo, retorne un token JWT. Adicionalmente
+implemente el modelo de recuperación de contraseña enviando un correo con un
+enlace personalizado.
+
+Implementa dos controladores: uno para el manejo sesión (incluya el refresh token) y
+otro para los usuarios.
 
 ## Project setup
 
